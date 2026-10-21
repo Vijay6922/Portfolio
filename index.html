@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay Kumar Guntagani | Full-Stack Engineer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Animate.css entry animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        figmaBlack: '#000000',
+                        figmaNav: '#0A0A0A',
+                        figmaGreen: '#399903', // Exact green from button
+                        figmaBlue: '#0078D7',
+                        figmaCard: '#0D0D0D'
+                    },
+                    boxShadow: {
+                        neonGreen: '0 0 20px rgba(57, 153, 3, 0.4)',
+                        neonNav: '0 0 15px rgba(0, 120, 215, 0.2)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-figmaBlack text-gray-300 font-inter antialiased selection:bg-figmaGreen/30 selection:text-white overflow-x-hidden">
+
+    <!-- Header / Floating Figma Navigation Bar -->
+    <div class="max-w-5xl mx-auto px-4 pt-6 sticky top-0 z-50 bg-figmaBlack/80 backdrop-blur-md">
+        <header class="bg-figmaNav border border-figmaBlue/40 shadow-neonNav rounded-xl px-6 py-4 flex items-center justify-between">
+            <div class="text-sm font-semibold tracking-wider text-white">
+                VIJAY KUMAR<span class="text-figmaBlue">.G</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-xs font-mono tracking-widest text-gray-400">
+                <a href="#about" class="hover:text-white transition">HOME</a>
+                <a href="#stack" class="hover:text-white transition">ECOSYSTEM</a>
+                <a href="#experience" class="hover:text-white transition">EXPERIENCE</a>
+                <a href="#projects" class="hover:text-white transition">PROJECTS</a>
+                <a href="#contact" class="hover:text-white transition">GET IN TOUCH</a>
+            </nav>
+            <div class="flex items-center space-x-4 text-gray-400 text-sm">
+                <a href="https://github.com/Vijay6922" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hover:text-white transition"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="about" class="min-h-[80vh] flex flex-col justify-center max-w-5xl mx-auto px-6 py-12 border-b border-gray-900">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Intro Content -->
+            <div class="md:col-span-7 space-y-6 text-left animate__animated animate__fadeInLeft">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight">
+                    Vijay Kumar Guntagani
+                </h1>
+                <p class="text-sm sm:text-base text-gray-400 max-w-md font-mono leading-relaxed">
+                    Full Stack Engineer with 2+ years of experience building production-grade applications using Java, Spring Boot, REST APIs, and Angular. Experienced in event-driven microservices, secure API development, automated testing, and CI/CD deployments.
+                </p>
+                <p class="text-xs font-mono text-gray-500">Vizag, Andhra Pradesh · <a href="tel:+917993515267" class="hover:text-white">+91 79935 15267</a> · <a href="mailto:vijayguntagani692@gmail.com" class="hover:text-white">Email me</a></p>
+                <div class="pt-4">
+                    <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-figmaGreen text-white font-medium text-sm hover:opacity-90 transition duration-300 shadow-neonGreen transform hover:-translate-y-0.5">
+                        Let's get started <i class="fas fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Profile Avatar Component -->
+            <div class="md:col-span-5 flex justify-center md:justify-end animate__animated animate__fadeInRight">
+                <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-gray-900 bg-gray-800">
+                    <img src="./image.jpg" alt="Portrait of Vijay Kumar Guntagani" class="w-full h-full object-cover object-center" onerror="this.hidden = true; this.nextElementSibling.hidden = false">
+                    <div hidden aria-label="Vijay Kumar Guntagani" class="w-full h-full flex items-center justify-center bg-figmaNav text-5xl font-bold text-figmaBlue">VG</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tech Capabilities Track Record Label -->
+        <div class="mt-20 pt-8 border-t border-gray-900/50 animate__animated animate__fadeInUp animate__delay-1s">
+            <p class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-6">Familiar Enterprise Tooling & Tech</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-4 text-xs font-mono text-gray-400">
+                <div class="bg-figmaNav border border-gray-900 rounded-lg p-3 flex items-center gap-2"><i class="fab fa-java text-orange-400"></i> Java / Spring</div>
+                <div class="bg-figmaNav border border-gray-900 rounded-lg p-3 flex items-center gap-2"><i class="fab fa-angular text-red-500"></i> Angular UI</div>
+                <div class="bg-figmaNav border border-gray-900 rounded-lg p-3 flex items-center gap-2"><i class="fab fa-docker text-blue-400"></i> Docker Container</div>
+                <div class="bg-figmaNav border border-gray-900 rounded-lg p-3 flex items-center gap-2"><i class="fas fa-project-diagram text-teal-400"></i> Apache Kafka</div>
+                <div class="bg-figmaNav border border-gray-900 rounded-lg p-3 flex items-center gap-2"><i class="fas fa-infinity text-blue-500"></i> Azure DevOps</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Stack Ecosystem Section -->
+    <section id="stack" class="py-24 max-w-5xl mx-auto px-6 border-b border-gray-900">
+        <div class="mb-16" data-aos="fade-up">
+            <p class="text-xs font-mono uppercase tracking-widest text-figmaBlue mb-2">01 / CAPABILITIES</p>
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Technical Ecosystem</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Backend Modules -->
+            <div class="bg-figmaCard border border-gray-900 rounded-xl p-6 transition-all duration-300 hover:border-figmaBlue/30 group" data-aos="fade-up">
+                <h3 class="text-sm font-mono tracking-widest text-white uppercase mb-4 border-b border-gray-900 pb-2">Backend Infrastructure</h3>
+                <ul class="space-y-2 text-xs font-mono text-gray-400">
+                    <li>• Core Java: Collections, Multithreading, JVM</li>
+                    <li>• Spring Boot & Microservices</li>
+                    <li>• REST APIs, Hibernate, Spring Data JPA</li>
+                    <li>• Kafka & ActiveMQ</li>
+                    <li>• OAuth2 & RHSSO</li>
+                    <li>• MySQL & DB2</li>
+                </ul>
+            </div>
+
+            <!-- Frontend UI -->
+            <div class="bg-figmaCard border border-gray-900 rounded-xl p-6 transition-all duration-300 hover:border-figmaGreen/30 group" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-sm font-mono tracking-widest text-white uppercase mb-4 border-b border-gray-900 pb-2">Frontend Interface</h3>
+                <ul class="space-y-2 text-xs font-mono text-gray-400">
+                    <li>• Angular & TypeScript</li>
+                    <li>• React.js (Basics)</li>
+                    <li>• HTML5 & CSS3</li>
+                    <li>• Jasmine</li>
+                    <li>• REST API integrations</li>
+                </ul>
+            </div>
+
+            <!-- Testing and quality engineering -->
+            <div class="bg-figmaCard border border-gray-900 rounded-xl p-6 transition-all duration-300 hover:border-purple-500/30 group" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-sm font-mono tracking-widest text-white uppercase mb-4 border-b border-gray-900 pb-2">Testing & Quality</h3>
+                <ul class="space-y-2 text-xs font-mono text-gray-400">
+                    <li>• JUnit & Cucumber</li>
+                    <li>• Integration testing</li>
+                    <li>• Jasmine</li>
+                    <li>• Pull request reviews</li>
+                </ul>
+            </div>
+
+            <!-- DevOps and monitoring -->
+            <div class="bg-figmaCard border border-gray-900 rounded-xl p-6 transition-all duration-300 hover:border-purple-500/30 group" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-sm font-mono tracking-widest text-white uppercase mb-4 border-b border-gray-900 pb-2">DevOps & Monitoring</h3>
+                <ul class="space-y-2 text-xs font-mono text-gray-400">
+                    <li>• Azure DevOps & CI/CD</li>
+                    <li>• Docker & Kubernetes</li>
+                    <li>• Grafana & Dynatrace</li>
+                    <li>• Git, Postman & Bruno</li>
+                    <li>• Swagger & OpenAPI</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="py-24 max-w-5xl mx-auto px-6 border-b border-gray-900">
+        <div class="mb-12" data-aos="fade-up">
+            <p class="text-xs font-mono uppercase tracking-widest text-figmaGreen mb-2">02 / CAREER</p>
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Professional Experience</h2>
+        </div>
+
+        <div class="space-y-6">
+            <article class="bg-figmaCard border border-gray-900 rounded-xl p-6" data-aos="fade-up">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Embedded Software Engineer <span class="text-sm font-normal text-gray-400">· Full-time</span></h3>
+                        <p class="text-sm text-figmaBlue">Imaginnovate · Vizag, Andhra Pradesh</p>
+                    </div>
+                    <span class="text-xs font-mono text-gray-500">Mar 2024 – Present</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div class="rounded-lg border border-gray-800 bg-black/30 p-4">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-figmaBlue mb-2"><i class="fas fa-rocket mr-2" aria-hidden="true"></i>Deployment</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">Managed Azure DevOps pipelines, releases, validation, and production monitoring.</p>
+                        <p class="mt-3 text-lg font-semibold text-white">90%+ <span class="text-xs font-normal text-gray-500">successful deployments</span></p>
+                    </div>
+                    <div class="rounded-lg border border-gray-800 bg-black/30 p-4">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-figmaGreen mb-2"><i class="fas fa-vial mr-2" aria-hidden="true"></i>Testing &amp; Quality</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">Built automated test coverage with JUnit and Cucumber; reviewed 100+ pull requests.</p>
+                        <p class="mt-3 text-lg font-semibold text-white">90%+ <span class="text-xs font-normal text-gray-500">test coverage</span></p>
+                    </div>
+                    <div class="rounded-lg border border-gray-800 bg-black/30 p-4">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-purple-400 mb-2"><i class="fas fa-chart-line mr-2" aria-hidden="true"></i>Product Impact</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">Delivered Angular features and business process automation.</p>
+                        <p class="mt-3 text-lg font-semibold text-white">1,000+ <span class="text-xs font-normal text-gray-500">requests/month</span></p>
+                        <p class="text-sm text-gray-400">70% less manual effort</p>
+                    </div>
+                </div>
+                <h4 class="text-xs font-mono uppercase tracking-wider text-gray-500 mb-3">Engineering Contributions</h4>
+                <ul class="space-y-2 text-sm text-gray-400 leading-relaxed list-disc pl-5">
+                    <li>Built event-driven microservices with Kafka and ActiveMQ for reliable, low-latency data processing.</li>
+                    <li>Secured REST APIs with OAuth2 and RHSSO for token-based authentication and service communication.</li>
+                    <li>Resolved critical CVEs and optimized DB2 queries to improve system reliability and reduce latency.</li>
+                </ul>
+            </article>
+
+            <article class="bg-figmaCard border border-gray-900 rounded-xl p-6" data-aos="fade-up">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Software Developer Intern</h3>
+                        <p class="text-sm text-figmaBlue">Imaginnovate · Vizag</p>
+                    </div>
+                    <span class="text-xs font-mono text-gray-500">Aug 2023 – Feb 2024</span>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-400 leading-relaxed list-disc pl-5">
+                    <li>Developed and debugged backend features using Java/J2EE, Spring Boot, Hibernate, JDBC, and Maven, applying OOP and multithreading concepts.</li>
+                    <li>Developed and tested REST API features while working with SQL and enterprise application debugging.</li>
+                </ul>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 max-w-5xl mx-auto px-6 border-b border-gray-900">
+        <div class="mb-12" data-aos="fade-up">
+            <p class="text-xs font-mono uppercase tracking-widest text-figmaGreen mb-2">03 / PROJECTS</p>
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Projects</h2>
+        </div>
+        <article class="bg-figmaCard border border-gray-900 rounded-xl p-6" data-aos="fade-up">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-3">
+                <div>
+                    <h3 class="text-lg font-bold text-white">Employee Management System</h3>
+                    <p class="text-xs font-mono text-gray-500 mt-1">Java · Spring Boot · Spring Data JPA · REST APIs</p>
+                </div>
+                <span class="text-xs font-mono text-gray-500">2023</span>
+            </div>
+            <p class="text-sm text-gray-400 leading-relaxed">Developed a layered Spring Boot REST application to manage employees, departments, and managers. Implemented validated APIs with H2, Maven, and OpenAPI/Swagger for persistence, build management, and API documentation.</p>
+        </article>
+    </section>
+
+    <!-- Education -->
+    <section class="py-16 max-w-5xl mx-auto px-6 border-b border-gray-900">
+        <div data-aos="fade-up">
+            <p class="text-xs font-mono uppercase tracking-widest text-figmaBlue mb-2">04 / EDUCATION</p>
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-6">Education</h2>
+            <div class="bg-figmaCard border border-gray-900 rounded-xl p-6 flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+                <div>
+                    <h3 class="text-lg font-bold text-white">IIIT RGUKT Srikakulam</h3>
+                    <p class="text-sm text-gray-400">Bachelor of Science in Computer Science · Srikakulam, India</p>
+                </div>
+                <span class="text-xs font-mono text-gray-500">2019 – 2023</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 max-w-5xl mx-auto px-6">
+        <div data-aos="fade-up">
+            <p class="text-xs font-mono uppercase tracking-widest text-figmaBlue mb-2">05 / CONTACT</p>
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Get in touch</h2>
+            <p class="mt-4 text-sm text-gray-400">Interested in working together? Contact me by phone or email, or connect on LinkedIn and GitHub.</p>
+            <div class="mt-6 flex flex-wrap gap-4 text-sm">
+                <a href="mailto:vijayguntagani692@gmail.com" class="text-figmaBlue hover:text-white transition">vijayguntagani692@gmail.com</a>
+                <a href="tel:+917993515267" class="text-figmaBlue hover:text-white transition">+91 79935 15267</a>
+                <a href="https://github.com/Vijay6922" target="_blank" rel="noopener noreferrer" class="text-figmaBlue hover:text-white transition">GitHub</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-figmaBlue hover:text-white transition">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-900 py-6 text-center text-xs text-gray-500 font-mono">
+        © <span id="currentYear"></span> Vijay Kumar Guntagani
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        if (window.AOS) {
+            AOS.init({ once: true, duration: 600 });
+        }
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
